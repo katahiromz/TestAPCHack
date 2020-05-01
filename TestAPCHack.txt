@@ -1,0 +1,15 @@
+main: sleep
+thread_proc: sleep
+main: awake
+main: sleep
+DoUserAPC(00000000)
+thread_proc: awake
+thread_proc: sleep
+main: awake
+main: sleep
+DoUserAPC(00000001)
+thread_proc: awake
+thread_proc: sleep
+main: awake
+TerminateAPC(00000002)
+thread_proc: awake
